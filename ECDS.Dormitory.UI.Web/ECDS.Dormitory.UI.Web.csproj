@@ -16,7 +16,7 @@
     <RootNamespace>ECDS.Dormitory.UI.Web</RootNamespace>
     <AssemblyName>ECDS.Dormitory.UI.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -89,16 +89,84 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\chosen.css" />
+    <Content Include="Content\elfinder.min.css" />
+    <Content Include="Content\elfinder.theme.css" />
+    <Content Include="Content\font-awesome-ie7.min.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fullcalendar.css" />
+    <Content Include="Content\glyphicons.css" />
+    <Content Include="Content\halflings.css" />
+    <Content Include="Content\ie.css" />
+    <Content Include="Content\ie9.css" />
+    <Content Include="Content\jquery-ui-1.8.21.custom.css" />
+    <Content Include="Content\jquery.cleditor.css" />
+    <Content Include="Content\jquery.gritter.css" />
+    <Content Include="Content\jquery.iphone.toggle.css" />
+    <Content Include="Content\jquery.noty.css" />
+    <Content Include="Content\noty_theme_default.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\style-forms.css" />
+    <Content Include="Content\style-responsive.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\uniform.default.css" />
+    <Content Include="Content\uploadify.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-regular.svg" />
+    <Content Include="fonts\glyphiconshalflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\fontawesome-webfont-0.eot" />
+    <Content Include="fonts\fontawesome-webfont-62877.eot" />
+    <Content Include="fonts\fontawesome-webfont-62877.ttf" />
+    <Content Include="fonts\fontawesome-webfont-62877.woff" />
+    <Content Include="fonts\glyphicons-regular-0.eot" />
+    <Content Include="fonts\glyphicons-regular.eot" />
+    <Content Include="fonts\glyphicons-regular.ttf" />
+    <Content Include="fonts\glyphicons-regular.woff" />
+    <Content Include="fonts\glyphiconshalflings-regular-0.eot" />
+    <Content Include="fonts\glyphiconshalflings-regular.eot" />
+    <Content Include="fonts\glyphiconshalflings-regular.ttf" />
+    <Content Include="fonts\glyphiconshalflings-regular.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\metro\bootstrap.js" />
+    <Content Include="Scripts\metro\bootstrap.min.js" />
+    <Content Include="Scripts\metro\counter.js" />
+    <Content Include="Scripts\metro\custom.js" />
+    <Content Include="Scripts\metro\excanvas.js" />
+    <Content Include="Scripts\metro\fullcalendar.min.js" />
+    <Content Include="Scripts\metro\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\metro\jquery-migrate-1.0.0.min.js" />
+    <Content Include="Scripts\metro\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="Scripts\metro\jquery.chosen.min.js" />
+    <Content Include="Scripts\metro\jquery.cleditor.min.js" />
+    <Content Include="Scripts\metro\jquery.cookie.js" />
+    <Content Include="Scripts\metro\jquery.dataTables.min.js" />
+    <Content Include="Scripts\metro\jquery.elfinder.min.js" />
+    <Content Include="Scripts\metro\jquery.flot.js" />
+    <Content Include="Scripts\metro\jquery.flot.pie.js" />
+    <Content Include="Scripts\metro\jquery.flot.resize.min.js" />
+    <Content Include="Scripts\metro\jquery.flot.stack.js" />
+    <Content Include="Scripts\metro\jquery.gritter.min.js" />
+    <Content Include="Scripts\metro\jquery.imagesloaded.js" />
+    <Content Include="Scripts\metro\jquery.iphone.toggle.js" />
+    <Content Include="Scripts\metro\jquery.knob.modified.js" />
+    <Content Include="Scripts\metro\jquery.masonry.min.js" />
+    <Content Include="Scripts\metro\jquery.noty.js" />
+    <Content Include="Scripts\metro\jquery.raty.min.js" />
+    <Content Include="Scripts\metro\jquery.sparkline.min.js" />
+    <Content Include="Scripts\metro\jquery.ui.touch-punch.js" />
+    <Content Include="Scripts\metro\jquery.uniform.min.js" />
+    <Content Include="Scripts\metro\jquery.uploadify-3.1.min.js" />
+    <Content Include="Scripts\metro\modernizr.js" />
+    <Content Include="Scripts\metro\retina.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -129,6 +197,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
@@ -146,7 +215,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>37320</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:37320/</IISUrl>
+          <IISUrl>http://localhost/ecDormitory</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
